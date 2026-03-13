@@ -7,8 +7,17 @@
     <style>
         body { font-family: 'Segoe UI', sans-serif; background-color: #0f172a; color: #f8fafc; display: flex; justify-content: center; padding: 20px; }
         .card { background: #1e293b; padding: 25px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.3); max-width: 400px; width: 100%; text-align: center; }
-        h1 { font-size: 1.4rem; color: #38bdf8; margin-bottom: 10px; display: flex; align-items: center; justify-content: center; gap: 10px; }
-        p { font-size: 0.9rem; color: #94a3b8; margin-bottom: 20px; }
+                h1 { 
+            font-size: 1.1rem; 
+            color: #38bdf8; 
+            margin-bottom: 10px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            gap: 8px; 
+            white-space: nowrap; 
+        }
+
         /* Esto hará que CUALQUIER botón con la clase .copied cambie a verde */
 .copied { 
     background-color: #22c55e !important; 
@@ -71,15 +80,6 @@
         .ws-icon { width: 20px; height: 20px; fill: white; }
 
         .footer { margin-top: 20px; font-size: 0.75rem; color: #64748b; }
-        @media (max-width: 480px) {
-    h1 {
-        font-size: 1rem; /* Solo se achica en pantallas de celular */
-    }
-    .card {
-        padding: 15px; /* Aprovechamos mejor el espacio en móviles */
-    }
-}
-
     </style>
 </head>
 <body>
@@ -169,5 +169,6 @@
 </body>
 
 </html>
+
 
 
