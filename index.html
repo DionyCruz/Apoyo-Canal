@@ -57,6 +57,47 @@
     transition: 0.3s; 
 }
 
+        /* Modifica esta para que permita poner botones a los lados */
+.btn-group-raw { 
+    margin-bottom: 12px; 
+    background: #334155; 
+    padding: 12px; 
+    border-radius: 12px; 
+    display: flex; 
+    flex-direction: row; /* Alineación horizontal */
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 8px; 
+}
+
+/* Estilo para el botón de Donar (Color PayPal) */
+.dinate-btn { 
+    background: #FFD900; 
+    color: #00263E; 
+    border: none; 
+    flex: 1; /* Hace que ambos botones midan lo mismo */
+    padding: 10px; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    font-size: 0.85rem; 
+    font-weight: bold; 
+    text-decoration: none;
+    transition: 0.3s; 
+}
+
+/* Ajuste para el botón de copiar cuando está a la par */
+.copy-btn-half { 
+    background: #38bdf8; 
+    color: #0f172a; 
+    border: none; 
+    flex: 1; 
+    padding: 10px; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    font-size: 0.85rem; 
+    font-weight: bold; 
+    transition: 0.3s; 
+}
         .btn-group { margin-bottom: 12px; background: #334155; padding: 12px; border-radius: 12px; display: flex; flex-direction: column; align-items: center; gap: 8px; }
         .label { font-size: 0.8rem; color: #cbd5e1; line-height: 1.2; }
         .copy-btn { background: #38bdf8; color: #0f172a; border: none; width: 100%; padding: 10px; border-radius: 8px; cursor: pointer; font-size: 0.85rem; font-weight: bold; transition: 0.3s; }
@@ -103,11 +144,11 @@
     <button class="copy-btn-half" onclick="copyText('https://paypal.me/DionicioCruzT', this)">Copiar Enlace</button>
 </div>
 
-    <div class="btn-group-row">
+    <div class="btn-group-raw">
     <span class="label" style="width: 100%; margin-bottom: 4px;">AIRTM (Donación / Correo)</span>
     
     <!-- Botón que va directo al enlace -->
-    <a href="https://www.airtm.me/diony_cruz" target="_blank" class="donate-btn">Donar Ahora</a>
+    <a href="https://www.airtm.me/diony_cruz" target="_blank" class="dinate-btn">Donar Ahora</a>
     
     <!-- Botón que copia el enlace -->
     <button class="copy-btn-half" onclick="copyText('airtm.me/diony_cruz', this)">Copiar Enlace</button>
